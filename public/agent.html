@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpDesk Lite - Agent Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h1>Support Agent Dashboard</h1>
+      <div class="user-info">
+        <span id="username"></span>
+        <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+      </div>
+    </header>
+    
+    <div class="dashboard-content">
+      <div class="card">
+        <h2>Ticket Queue</h2>
+        <p class="subtitle">Open tickets ordered by priority</p>
+        <div id="ticketsQueue" class="tickets-list">
+          <p>Loading tickets...</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>My Assigned Tickets</h2>
+        <div id="assignedTickets" class="tickets-list">
+          <p>Loading assigned tickets...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="error" class="error-message"></div>
+  <div id="success" class="success-message"></div>
+  
+  <script src="js/agent.js"></script>
+</body>
+</html>

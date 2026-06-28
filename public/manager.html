@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpDesk Lite - Manager Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h1>Manager Dashboard</h1>
+      <div class="user-info">
+        <span id="username"></span>
+        <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+      </div>
+    </header>
+    
+    <div class="dashboard-content">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Total Tickets</h3>
+          <p id="totalTickets" class="stat-value">-</p>
+        </div>
+        
+        <div class="stat-card">
+          <h3>Resolved (7 Days)</h3>
+          <p id="resolvedLast7Days" class="stat-value">-</p>
+        </div>
+        
+        <div class="stat-card">
+          <h3>Avg Resolution Time</h3>
+          <p id="avgResolutionTime" class="stat-value">-</p>
+        </div>
+      </div>
+      
+      <div class="stats-row">
+        <div class="card">
+          <h2>Tickets by Status</h2>
+          <div id="statusStats" class="stats-list"></div>
+        </div>
+        
+        <div class="card">
+          <h2>Tickets by Priority</h2>
+          <div id="priorityStats" class="stats-list"></div>
+        </div>
+        
+        <div class="card">
+          <h2>Tickets by Category</h2>
+          <div id="categoryStats" class="stats-list"></div>
+        </div>
+      </div>
+      
+      <div class="stats-row">
+        <div class="card">
+          <h2>Users by Role</h2>
+          <div id="roleStats" class="stats-list"></div>
+        </div>
+        
+        <div class="card">
+          <h2>Recent Tickets</h2>
+          <div id="recentTickets" class="tickets-list">
+            <p>Loading...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="error" class="error-message"></div>
+  
+  <script src="js/manager.js"></script>
+</body>
+</html>

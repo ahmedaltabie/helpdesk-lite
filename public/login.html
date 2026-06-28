@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpDesk Lite - Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>HelpDesk Lite</h1>
+      <p class="subtitle">Sign in to your account</p>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="identifier">Username, Email, or Phone</label>
+          <input type="text" id="identifier" name="username" required placeholder="Enter your identifier">
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+      
+      <div id="error" class="error-message"></div>
+      
+      <div class="demo-credentials">
+        <h3>Demo Credentials</h3>
+        <p><strong>Employee:</strong> ahmed99 / ahmed123</p>
+        <p><strong>Agent:</strong> agent01 / agent123</p>
+        <p><strong>Manager:</strong> manager01 / manager123</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/login.js"></script>
+</body>
+</html>
